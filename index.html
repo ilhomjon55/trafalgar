@@ -8,7 +8,50 @@
 </head>
 
 <body>
-
+  <header class="site__header">
+    <div class="container"><a class="site__logo" href="index.html">
+        <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Site logo">
+      </a>
+      <nav class="site__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="search.html">Find a doctor
+          <li class="nav__item">
+            <a class="nav__link" href="apps.html">Apps</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="testimonials.html">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="about.html">About us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="site__content">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__info">
+          <h2 class="hero__heading">Virtual healthcare for you</h2>
+          <p class="hero__text">
+            Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
+          </p>
+          <a class="hero__link blue__link" href="contact.html">Consult today</a>
+        </div>
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/hero-img-300.jpg, img/hero-img-600.jpg 2x">
+          <source type="image/webp" srcset="img/hero-img.webp 1x, img/hero-img@2x.webp 2x">
+          <source type="image/avif" srcset="img/hero-img.avif 1x, img/hero-img@2x.avif 2x">
+          <img class="hero__img" src="img/hero-img.png" alt="Virtual healthcare for you section image"
+            srcset="img/hero-img.png 1x, img/hero-img@2x.png 2x">
+        </picture>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

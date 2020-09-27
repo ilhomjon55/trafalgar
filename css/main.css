@@ -26,6 +26,10 @@
   src: url("../fonts/mulish-v1-latin-700.woff2") format("woff2"), url("../fonts/mulish-v1-latin-700.woff") format("woff");
 }
 
+:root {
+  --black-text-color: #1F1534;
+}
+
 html {
   height: 100%;
   -webkit-box-sizing: border-box;
@@ -83,5 +87,53 @@ img {
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.site__header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 135px 80px;
+}
+
+.site__nav {
+  margin-left: auto;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item + .nav__item {
+  margin-left: 40px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--black-text-color);
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.nav__link:hover {
+  opacity: 1;
+}
+
+.nav__link--active {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
